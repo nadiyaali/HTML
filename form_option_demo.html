@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with radiobuttons and checkbox</title>
+</head>
+
+<body>
+    <form action="abc.html">
+        <h2>Please select for your order</h2>
+        <h3>Select Color:</h3>
+        
+        <input type="radio" name="color" id="red" value="red">
+        <label for="red">Red</label>
+        
+        <input type="radio" name="color" id="blue" value="blue">
+        <label for="blue">Blue</label>
+
+        <input type="radio" name="color" id="green" value="green">
+        <label for="green">Green</label>
+        <br>
+
+        <h3>Select Size :</h3>
+        <label for="size">Select size:</label>
+        <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        <br> 
+        <br>    
+        <label for="volumecontrol">Select volume</label>
+        <input type="range" step="10" id="volumecontrol" name="volume" min="0" max="100" value="50">
+        <br>
+        <br>
+        <label for="request"></label>
+        <textarea name="request" id="request" cols="30" rows="10"></textarea>
+        <br>
+
+        <button type="submit">Confirm Order</button>
+        <br>
+        <br>
+    </form>
+
+    <!-- Form with required input -->
+    <form action="abc.html">
+        <label for="firstname">name : </label>
+    <input type="text" id="firstname" name="firstname" required>
+
+    <label for="email"></label>
+        <input type="email" name="email" id="email">
+
+        <label for="url"></label>
+        <input type="url" name="url" id="url">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>

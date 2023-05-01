@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+<!-- The ID attribute in input links to FOR attribute in label -->
+<!-- for sending HTTP GET request, use NAME in input tag -->
+
+<body>
+    <form action="mypage.html">
+        <div>
+            <label for="username">Username </label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </div>
+        <div>
+            <label for="color">Color </label>
+            <input id="color" type="color">
+        </div>
+        <div>
+            <label for="phonenumber">Phone number</label>
+            <input id="phonenumber" type="number" placeholder="phonenumber" name="phonenumber">
+        </div>
+        <div>
+            <label for="age">Phone number</label>
+            <input id="age" type="number" placeholder="your age" name="age" min="18" max="100">
+        </div>
+
+
+        <button type="button">Simple Button</button>
+        <button type="submit">Actual submit Button</button>
+        <input type="button" value="submit">
+
+
+    </form>
+
+    <!-- Reddit Search Form -->
+    <!-- https://www.reddit.com/search/?q=apples -->
+    <hr>
+
+    <p>
+    <form action="https://www.reddit.com/search/">
+        <h2>Reddit Search</h2>
+        <div>
+            <label for="redditsearch"></label>
+            <input type="text" id="redditsearchquery" name="q">
+            <br>
+        </div>
+        <button type="submit">Search Reddit</button>
+    </form>
+    </p>
+
+    <!-- Google Search https://www.google.com/search?q=apples -->
+
+    <hr>
+    <p>
+    <form action="https://www.google.com/search?">
+        <h2>Google Search</h2>
+        <div>
+            <label for="googlesearchtext"></label>
+            <input type="text" id="googlesearchtext" name="q">
+            <br>
+        </div>
+        <button type="submit">Search Google</button>
+    </form>
+
+    </p>
+
+    <!-- Youtube search https://www.youtube.com/results?search_query=abc -->
+    <hr>
+    <p>
+    <form action="https://www.youtube.com/results">
+        <h2>Youtube Search</h2>
+        <div>
+            <label for="youtubesearchtext"></label>
+            <input type="text" id="youtubesearchtext" name="search_query">
+        </div>
+        <button type="submit">Search Youtube</button>
+    </form>
+
+    </p>
+
+
+</body>
+
+</html>
